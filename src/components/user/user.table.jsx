@@ -3,18 +3,7 @@ import { fetchAllUserAPI } from "../../services/api.service";
 import { useEffect, useState } from "react";
 
 const UserTable = () => {
-    const [dataUser, setDataUser] = useState([
-        {
-            _id: "huon",
-            fullName: 25,
-            email: "hn"
-        },
-         {
-            _id: "tuon",
-            fullName: 22,
-            email: "hn"
-        },
-    ]);
+    const [dataUser, setDataUser] = useState([]);
 
     useEffect(() => {
         console.log(">>>>>>>>>> run user Effect");
